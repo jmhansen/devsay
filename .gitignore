@@ -1,0 +1,9 @@
+
+# General
+*.pyc
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
