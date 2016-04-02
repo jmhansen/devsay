@@ -2,6 +2,9 @@
 # General
 *.pyc
 
+# Local settings
+development.py
+
 # IntelliJ project files
 .idea
 *.iml
