@@ -5,6 +5,9 @@
 # Local settings
 development.py
 
+# NPM
+node_modules/
+
 # IntelliJ project files
 .idea
 *.iml
