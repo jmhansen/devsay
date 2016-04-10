@@ -13,7 +13,7 @@
 
 
         <div class="col-md-4 col-md-offset-4">
-            <form action="{% url 'create_term' %}" method="post" class="form-horizontal">
+            <form action="{% url 'create_term' %}" method="post">
                 {% csrf_token %}
                 <div class="form-group">
                     {{ form.name.errors }}
