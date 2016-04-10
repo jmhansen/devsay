@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="container">
+
+          <div class="starter-template">
+            <h1 class="text-center">Add a Term</h1>
+            <p class="lead text-center">Can't find the term you are looking for?  Use the form below to add to the library of terms.</p>
+          </div>
+
+
+        <div class="col-md-4 col-md-offset-4">
+            <form action="{% url 'create_term' %}" method="post" class="form-horizontal">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.name.errors }}
+                    <label for="{{ form.name.id_for_label }}"></label>
+                    <input id="{{ form.name.id_for_label }}" type="text" class="form-control" name="name" placeholder="Enter term here">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+
+    </div><!-- /.container -->
+
+
+{% endblock %}
