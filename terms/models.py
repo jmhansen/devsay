@@ -14,7 +14,7 @@ class CustomBaseModel(models.Model):
 
 
 class Term(CustomBaseModel):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=20, unique=True)
     description = models.TextField(max_length=255, blank=True, null=True)
     query_count = models.IntegerField(default=0, blank=True)
     # TODO: handle synonymns and related terms, possibly through foreign key to self
