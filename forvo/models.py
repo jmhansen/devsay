@@ -12,7 +12,7 @@ class ForvoWord(models.Model):
         return self.original_word
 
 
-class ForvoPronunciations(models.Model):
+class ForvoPronunciation(models.Model):
 
     word = models.ForeignKey(ForvoWord, related_name='pronunciations')
     forvo_id = models.PositiveIntegerField()
