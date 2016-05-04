@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ForvoWord, ForvoPronunciation
+
+
+admin.site.register(ForvoWord)
+admin.site.register(ForvoPronunciation)
